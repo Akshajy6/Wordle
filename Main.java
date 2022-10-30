@@ -9,7 +9,7 @@ public class Main {
     public static ArrayList<String> ANSWERS = new ArrayList<String>();
     public static void main(String[] args) {
         try {
-            File a = new File("C:\\Users\\Akshaj\\Documents\\VS Code\\Wordle\\answers.txt");
+            File a = new File("C:\\Users\\Akshaj\\Documents\\Projects\\Wordle\\answers.txt");
             BufferedReader b = new BufferedReader(new FileReader(a));
             String l = b.readLine();
 
@@ -74,7 +74,7 @@ public class Main {
 
     public static boolean isWord(String word) {
         try { 
-            File file = new File("C:\\Users\\Akshaj\\Documents\\VS Code\\Wordle\\allowed.txt");
+            File file = new File("C:\\Users\\Akshaj\\Documents\\Projects\\Wordle\\allowed.txt");
             BufferedReader br = new BufferedReader(new FileReader(file));
             String line = br.readLine();
             while(line != null) {
